@@ -7,4 +7,5 @@ Fork repository and clone localy, then run these commands in the root of the pro
 2. bower install
 3. gulp build
 6. gulp  => localhost:300
+
 ![Imgur](http://i.imgur.com/3jwc0NF.jpg?1)

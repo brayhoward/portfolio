@@ -1,2 +1,44 @@
+doctype html
+html
+  head
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    link(rel='stylesheet' href='vendor/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet' href='index.css' type='text/css')
+    title BRayHoward
+  body
+    #nav-header.container-fluid
+      nav.navbar.navbar-fixed-top
+        .container-fluid.navbar-left
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar-collapse-1')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            .navbar-brand
+              a(ui-sref='home') BRayHoward
 
-h1 hello world
+        #navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.active: a(ui-sref='home'): i.fa.fa-home &nbsp; Home
+            li: a(href='#about'): i.fa.fa-desktop &nbsp; about
+            li: a(href='#home').fa.fa-envelope-o &nbsp; Contact Me
+
+    #home.col-lg-12
+      .home-container
+        p Hi, My name is
+        h1 Brandon Howard
+        | Brandon did all his growing up in Ohio before he decided the midwest just wasn’t his cup of tea.
+        | He discovered Nashville two years ago, fell in love with the artist friendly east side, pulled up
+        | his roots in the North and headed to the South. Shortly after the move he was made aware of NSS
+        | and decided to apply. He made the cut and hasn’t looked back since. Brandon also enjoys climbing big rocks,
+        | urban commuting on his bike, kayaking on whitewater laden rivers and creeks, and just has a lot of love for
+        | the great outdoors in general.
+
+    script(src='vendor/jquery/dist/jquery.js')
+    script(src='vendor/bootstrap-sass/assets/javascripts/bootstrap.js')
+    script(src='index.js')
+
+

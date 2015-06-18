@@ -1,0 +1,75 @@
+@import '../public/vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+$primary-color: #000;
+$secondary-color: #fff;
+$color1: #97AD00;
+$color2: #8E8E8E;
+
+h1,h2,h3,p {
+  color: $primary-color;
+}
+
+body {
+ padding-top: 50px;
+}
+
+a {
+  color: $secondary-color;
+}
+a:hover {color:#DFFF02;}
+
+nav {
+  background-color: $primary-color;
+}
+.navbar-right {
+  margin-right: 0px !important;
+}
+
+.nav > li > a:hover {background-color: $primary-color;}
+
+.profile-mobile {
+  width: 30%;
+  padding:20px;
+}
+
+@media (max-width: 400px) {
+  .profile-mobile {
+    width: 50%;
+  }
+}
+
+.white-text {
+  color: $secondary-color;
+}
+.full-panel {padding: 50px 25px 50px 50px;}
+.full-panel-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#home {
+  background-color: $color1;
+  background-image: url("img/brandon-profile.jpg");
+  background-position: 80% bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 768px) {
+  #home {
+    background-image: none;
+    text-align: center;
+  }
+}
+
+#test {
+  background-color: $color2;
+}
+
+
+
+
+
+
+
+

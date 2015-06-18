@@ -18,24 +18,48 @@ html
               span.icon-bar
               span.icon-bar
             .navbar-brand
-              a(ui-sref='home') BRayHoward
+              a(href='#home') BRayHoward
 
         #navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
-            li.active: a(ui-sref='home'): i.fa.fa-home &nbsp; Home
-            li: a(href='#about'): i.fa.fa-desktop &nbsp; about
-            li: a(href='#home').fa.fa-envelope-o &nbsp; Contact Me
+            li#link2: a(href='#about'): i.fa.fa-linkedin
+            li#link2: a(href='#about'): i.fa.fa-github
+            li#link2: a(href='#about'): i.fa.fa-twitter
+            li#link3: a(href='#home').fa.fa-envelope-o
 
-    #home.col-lg-12
-      .home-container
-        p Hi, My name is
+    #home.row.full-panel
+      .left-side.col-sm-6
+        img.profile-mobile.img-circle.center-block.visible-xs(src="img/brandon-profile.jpg")
+        h3 Hi, My name is
         h1 Brandon Howard
-        | Brandon did all his growing up in Ohio before he decided the midwest just wasn’t his cup of tea.
-        | He discovered Nashville two years ago, fell in love with the artist friendly east side, pulled up
-        | his roots in the North and headed to the South. Shortly after the move he was made aware of NSS
-        | and decided to apply. He made the cut and hasn’t looked back since. Brandon also enjoys climbing big rocks,
-        | urban commuting on his bike, kayaking on whitewater laden rivers and creeks, and just has a lot of love for
-        | the great outdoors in general.
+        p.introduction.
+          Thanks for comming by my site. I just recently graduated from
+           <a href="http://nashvillesoftwareschool.com/"> NSS </a>.
+           While I was there I learned all about the magic that is software
+           develpment. And I also learned a lot about myself. We did three
+           months of front end develpment & three months of back end develpment.
+           In the fourth month I was introduced to Ruby, I quickly fell in love. Now I'm
+           looking for thoughtful, passionate team to help me hone my new craft!
+
+
+
+
+      .right-side.col-sm-6
+        //img.img-responsive.profile.center-block(src="img/brandon-profile.jpg")
+
+
+    #test.row.full-panel.full-panel-bg(style='background-image: url("http://www.fillmurray.com/1000/500")')
+      .col-sm-5.col-sm-offset-2
+        p.introduction.
+          Thanks for comming by my site. I just recently graduated from
+           <a href="http://nashvillesoftwareschool.com/"> NSS </a>.
+           While I was there I learned all about the magic that is software
+           develpment. And I also learned a lot about myself. We did three
+           months of front end develpment & three months of back end develpment.
+           In the fourth month I was introduced to Ruby, I quickly fell in love. Now I'm
+           looking for thoughtful, passionate team to help me hone my new craft!
+
+
 
     script(src='vendor/jquery/dist/jquery.js')
     script(src='vendor/bootstrap-sass/assets/javascripts/bootstrap.js')

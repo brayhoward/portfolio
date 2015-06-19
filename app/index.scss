@@ -8,13 +8,13 @@ $bright: #DFFF02;
 $bright2: #9800FF;
 
 
-$open-sans: 'Open Sans', sans-serif;
-$montserrat: 'Montserrat', sans-serif;
+$lato: 'Lato', sans-serif;
 $pt-serif:'PT Serif', serif;
 
 h1, h2 {
-  color: $black;
-  font-family: $pt-serif;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
 }
 
 h3 {
@@ -59,9 +59,16 @@ a:focus {
 
 nav {
   background-color: $black;
-  font-family: $open-sans;
-  a {color: $white;}
-  a:hover {color: $bright;}
+  font-weight: 100;
+  a {
+    color: $white;
+    letter-spacing: 2px;
+  }
+  a:hover {
+    color: $bright;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
 }
 .navbar-right {
   margin-right: 0px !important;
@@ -154,7 +161,12 @@ html, body {height: 100%}
 }
 
 #human {
-  h1, h2, h3, p {color:$white;}
+  p, h3 {
+    color:$white;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px black;
+  }
+  h2, {color: $black}
   .pics {
     margin: 25px 0 25px 25px;
     img {
@@ -162,6 +174,7 @@ html, body {height: 100%}
       border: 1px solid $black;
     }
     .pic {margin:25px 40px 50px 25px;}
+    p {color: #FFEA0D}
   }
 }
 

@@ -5,6 +5,8 @@ $white: #fff;
 $middle: #97AD00;
 $middle-grey: #809CAB;
 $bright: #DFFF02;
+$bright2: #9800FF;
+
 
 $open-sans: 'Open Sans', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
@@ -26,12 +28,23 @@ p {
 
 body {
  padding-top: 40px;
+ color: $black;
 }
 
 a {
   color: $bright;
 }
-a:hover {color:$white;}
+a:hover {
+  color:$white;
+  text-decoration: none;
+}
+
+a:focus {
+  background-color: $black;
+  color: $white;
+  text-decoration: none;
+}
+
 
 
 @media (max-width: 768px) {
@@ -48,12 +61,16 @@ nav {
   background-color: $black;
   font-family: $open-sans;
   a {color: $white;}
+  a:hover {color: $bright;}
 }
 .navbar-right {
   margin-right: 0px !important;
 }
 
-.nav > li > a:hover {background-color: $black;}
+.nav > li > a:hover {
+  background-color: $black;
+  color: $bright;
+}
 
 .profile-mobile {
   width: 40%;
@@ -120,32 +137,31 @@ html, body {height: 100%}
 }
 
 #skills {
-  background-color: $white;
+  background-color: $middle-grey;
   color: $black;
+  img {
+    max-width: 66px;
+  }
 
   a {
-    color: $bright;
+    color: $bright2;
   }
 
-  .logos {
-    margin-top: 20px;
-  }
-  i {
-    font-size: 50px; margin: 0 25px;
+  a:hover {
+    color: $white;
   }
 
 }
 
 #human {
-  color: $white;
-  h1, h2 {color:$white;}
+  h1, h2, h3, p {color:$white;}
   .pics {
-    margin: 25px 0;
+    margin: 25px 0 25px 25px;
     img {
       margin-bottom: 15px;
       border: 1px solid $black;
     }
-    .pic {margin-bottom: 50px;}
+    .pic {margin:25px 40px 50px 25px;}
   }
 }
 

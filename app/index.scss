@@ -10,7 +10,7 @@ h1,h2,h3,p {
 }
 
 body {
- padding-top: 50px;
+ padding-top: 40px;
 }
 
 a {
@@ -47,13 +47,20 @@ nav {
   background-size: cover;
   background-position: center center;
 }
+
+html, body {height: 100%}
+
 #home {
   background-color: $color1;
-  background-image: url("img/brandon-profile.jpg");
-  background-position: 80% bottom;
+  background-image: url("img/brandon-profile-green.jpg");
+  background-position: 95% bottom;
   background-repeat: no-repeat;
   background-size: contain;
+  height: 100%
 }
+
+
+
 
 @media (max-width: 768px) {
   #home {

@@ -4,8 +4,6 @@ var gulp       = require('gulp'),
     copy       = require('gulp-copy'),
     sass       = require('gulp-sass'),
     watch      = require('gulp-watch'),
-    neat       = require('node-neat').includePaths,
-    bourbon    = require('node-bourbon').includePaths,
     livereload = require('gulp-livereload');
 
 //////////CONNECT////////////////////////////////////
@@ -19,10 +17,7 @@ gulp.task('connect', function() {
 //////////SASS////////////////////////////////////
 gulp.task('sass', function () {
   gulp.src('./app/**/*.scss')
-    .pipe(sass({
-      includePaths: require('node-bourbon').includePaths,
-      includePaths: require('node-neat').includePaths
-    }))
+    .pipe(sass())
     .on('error', console.error.bind(console))
     .pipe(gulp.dest('./public/'))
     .pipe( connect.reload() );

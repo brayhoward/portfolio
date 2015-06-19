@@ -1,12 +1,27 @@
 @import '../public/vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
-$primary-color: #000;
-$secondary-color: #fff;
-$color1: #97AD00;
-$color2: #8E8E8E;
+$black: #000;
+$white: #fff;
+$middle: #97AD00;
+$middle-grey: #809CAB;
+$bright: #DFFF02;
 
-h1,h2,h3,p {
-  color: $primary-color;
+$open-sans: 'Open Sans', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$pt-serif:'PT Serif', serif;
+
+h1, h2 {
+  color: $black;
+  font-family: $pt-serif;
+}
+
+h3 {
+  color: $black;
+  font-family: $pt-serif;
+}
+
+p {
+  font-family: $pt-serif;
 }
 
 body {
@@ -14,22 +29,88 @@ body {
 }
 
 a {
-  color: $secondary-color;
+  color: $bright;
 }
-a:hover {color:#DFFF02;}
+a:hover {color:$white;}
+
+
+@media (max-width: 768px) {
+  h1 {font-size: 28px;}
+  h2 {font-size: 20px;}
+}
+
+@media (max-width: 400px) {
+  h1 {font-size: 22px;}
+  h2 {font-size: 18px;}
+}
 
 nav {
-  background-color: $primary-color;
+  background-color: $black;
+  font-family: $open-sans;
+  a {color: $white;}
 }
 .navbar-right {
   margin-right: 0px !important;
 }
 
-.nav > li > a:hover {background-color: $primary-color;}
+.nav > li > a:hover {background-color: $black;}
 
 .profile-mobile {
-  width: 30%;
+  width: 40%;
   padding:20px;
+}
+
+.white-text {
+  color: $white;
+}
+.full-panel {padding: 50px 25px 50px 50px;}
+.full-panel-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media (max-width: 768px) {
+  .full-panel {padding: 25px 20px 20px 20px;}
+}
+@media (max-width: 400px) {
+  .full-panel {padding: 20px;}
+}
+
+html, body {height: 100%}
+
+#home {
+  background-color: $middle;
+  background-image: url("img/brandon-profile-green.jpg");
+  background-position: 95% bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%
+}
+
+@media (max-width: 1000px) {
+  #home {
+    background-size: auto;
+    background-position: 120% bottom;
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    background-image: none;
+    text-align: left;
+    height: auto;
+    i {font-size: 24px;}
+  }
+}
+
+.down-arrow {
+  position: absolute; left: 50px; top: 80%;
+  color: $white;
+
+  i {
+    font-size: 30px;
+    color: $black;
+  }
 }
 
 @media (max-width: 400px) {
@@ -38,41 +119,42 @@ nav {
   }
 }
 
-.white-text {
-  color: $secondary-color;
-}
-.full-panel {padding: 50px 25px 50px 50px;}
-.full-panel-bg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
+#skills {
+  background-color: $white;
+  color: $black;
 
-html, body {height: 100%}
+  a {
+    color: $bright;
+  }
 
-#home {
-  background-color: $color1;
-  background-image: url("img/brandon-profile-green.jpg");
-  background-position: 95% bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%
+  .logos {
+    margin-top: 20px;
+  }
+  i {
+    font-size: 50px; margin: 0 25px;
+  }
+
 }
 
-
-
-
-@media (max-width: 768px) {
-  #home {
-    background-image: none;
-    text-align: center;
+#human {
+  color: $white;
+  h1, h2 {color:$white;}
+  .pics {
+    margin: 25px 0;
+    img {
+      margin-bottom: 15px;
+      border: 1px solid $black;
+    }
+    .pic {margin-bottom: 50px;}
   }
 }
 
-#test {
-  background-color: $color2;
+@media (max-width: 768px) {
+  #human .pics .pic {
+    margin-bottom: 25px;
+    img {width: 50%;}
+  }
 }
-
 
 
 

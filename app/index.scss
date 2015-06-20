@@ -17,6 +17,8 @@ h1, h2 {
   letter-spacing: 2px;
 }
 
+body {background-color: black}
+
 h3 {
   color: $black;
   font-family: $pt-serif;
@@ -166,7 +168,7 @@ html, body {height: 100%}
     letter-spacing: 1px;
     text-shadow: 1px 1px black;
   }
-  h2, {color: $black}
+  h2, h1 {color: $black}
   .pics {
     margin: 25px 0 25px 25px;
     img {
@@ -185,6 +187,11 @@ html, body {height: 100%}
     margin-bottom: 25px;
     img {width: 50%;}
   }
+}
+
+.footer {
+  color: white;
+  i {text-size: 40px;}
 }
 
 

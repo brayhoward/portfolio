@@ -4,8 +4,9 @@ $black: #000;
 $white: #fff;
 $middle: #97AD00;
 $middle-grey: #809CAB;
+$purple: #9124DA;
 $bright: #DFFF02;
-$bright2: #9800FF;
+$purple2: #9800FF;
 
 
 $lato: 'Lato', sans-serif;
@@ -146,18 +147,27 @@ html, body {height: 100%}
 }
 
 #skills {
-  background-color: $middle-grey;
+  background-color: $white;
   color: $black;
-  img {
-    max-width: 66px;
+  .code-shots img {
+    width: 70%;
+    margin: 20px auto;
   }
-
+  h1 {color: $black}
   a {
-    color: $bright2;
+    color: $purple;
   }
 
   a:hover {
-    color: $white;
+    color: $purple2;
+  }
+  p.highlight {
+    font-family: $lato;
+    color: #333;
+    font-size: 12px;
+  }
+  .logos {
+    margin: 50px 0;
   }
 
 }
@@ -190,8 +200,17 @@ html, body {height: 100%}
 }
 
 .footer {
-  color: white;
-  i {text-size: 40px;}
+  font-size: 15px;
+  background-color: $middle;
+  height:48px;
+  a {color: black;}
+  a:hover {
+    color: $bright;
+  }
+}
+
+.main-link {
+  font-size: 25px;
 }
 
 

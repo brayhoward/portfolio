@@ -55,33 +55,32 @@ html
       .row
         .col-sm-8.col-sm-offset-2
           h1 Tech prowess
-          p.
+          h4.
             The vast majority of our class time was spent hacking. We worked in small teams on group projects
-            and also spent a lot of time doing solo projects. Doing one to two new projects a week allowed us
-            to familiarize ourselves with a lot of awesome technologies!
+            and also spent a lot of time doing solo projects.
 
-      .row
+      .row.code-shots
         .col-md-12
           .col-md-4
-            img.img-responsive.img-rounded.center-block(src="img/code-shots/cal_output.png")
-            p.highlight.
+            //img.img-responsive.img-rounded.center-block(src="img/code-shots/cal_output.png")
+            //p.highlight.
               Ruby implamentation Unix <a href="https://github.com/brayhoward/calendar_app">`Cal`</a>
               without using Ruby's Time class.
           .col-md-4.pic
-            img.img-responsive.img-rounded.center-block(src="img/code-shots/linked-list-readme.png")
             img.img-responsive.img-rounded.center-block(src="img/code-shots/linked_list_code_shot.png")
             p.highlight.
               <a href="https://github.com/brayhoward/linked_list_cohort_huckleberry">Linked list</a>
               data structure constructed with base Ruby, not leverageing arrays or hashes.
           .col-md-4
-            img.img-responsive.img-rounded.center-block(src="img/code-shots/game-won-2.png")
-            p.highlight.
+            //img.img-responsive.img-rounded.center-block(src="img/code-shots/game-won-2.png")
+            //p.highlight.
               <a href="https://game-won.firebaseapp.com/?">Game-won</a>, tic-tac-toe built with javaScript.
 
 
       .row.logos.hidden-xs
-        .col-sm-10.col-sm-offset-2
-          .col-sm-1
+        .col-sm-8.col-sm-offset-2
+          h4 Doing one, sometimes, two new projects a week allowed us to familiarize ourselves with a lot of awesome technologies!
+          .col-sm-1.col-sm-offset-1
             img.img-responsive.img-rounded.center-block(src="img/logos/gulp_logo_words.png")
           .col-sm-1
             img.img-responsive.img-rounded.center-block(src="img/logos/git_logo_words.jpg")
@@ -123,15 +122,12 @@ html
 
     .row.footer
       .col-xs-10
-        .col-xs-1.col-xs-offset-6
-          i.fa.fa-twitter
+        .col-xs-1.col-xs-offset-6.main-link
+          a(href='https://github.com/brayhoward'): i.fa.fa-github
         .col-xs-1
-          i.fa.fa-github
+          a(href='https://twitter.com/brandonrhoward1'): i.fa.fa-twitter
         .col-xs-1
-          i.fa.fa-linkedin
-
-
-
+          a(href='https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button'): i.fa.fa-linkedin
 
     script(src='vendor/jquery/dist/jquery.js')
     script(src='vendor/bootstrap-sass/assets/javascripts/bootstrap.js')

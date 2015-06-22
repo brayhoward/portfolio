@@ -244,10 +244,16 @@ html, body {height: 100%}
   a:hover {
     color: $bright;
   }
+  .fa {
+    margin-top: 14px;
+  }
+  .back-to-top {
+    text-decoration: underline;
+  }
 }
 
 .main-link {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 

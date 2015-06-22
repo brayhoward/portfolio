@@ -81,6 +81,10 @@ nav {
   background-color: $black;
   color: $bright;
 }
+.nav > li > a:focus {
+  background-color: $black;
+  color: $bright;
+}
 
 .profile-mobile {
   width: 40%;
@@ -243,6 +247,10 @@ html, body {height: 100%}
   a {color: black;}
   a:hover {
     color: $bright;
+  }
+  a:focus {
+    color: $bright;
+    background-color: $middle;
   }
   .fa {
     margin-top: 14px;

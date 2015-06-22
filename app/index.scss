@@ -131,13 +131,47 @@ html, body {height: 100%}
 }
 
 .down-arrow {
-  position: absolute; left: 50px; top: 80%;
-  color: $white;
+  position: absolute; left: 50px; top: 85%;
 
-  i {
+  a {
     font-size: 30px;
     color: $black;
   }
+  a:hover {
+    color: $bright;
+  }
+
+  a:focus {
+  background-color: $middle;
+  color: $bright;
+  text-decoration: none;
+  }
+
+  a.cheveron2 {
+      margin-top: -15px;
+    }
+}
+
+.skills-down-arrow {
+  position: absolute; left: 50px; top: 185%;
+
+  a {
+    font-size: 30px;
+    color: $black;
+  }
+  a:hover {
+    color: $purple2;
+  }
+
+  a:focus {
+  background-color: $white;
+  color: $purple2;
+  text-decoration: none;
+  }
+
+  a.cheveron4 {
+      margin-top: -15px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -168,6 +202,9 @@ html, body {height: 100%}
   }
   .logos {
     margin: 50px 0;
+    img {
+      min-width: 31px;
+    }
   }
 
 }

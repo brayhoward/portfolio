@@ -11,10 +11,16 @@ html
     title Brandon Howard
   body
     .down-arrow.hidden-xs
-          .chevron1
-            i(class="fa fa-chevron-down")
-          .chevron2
-            i(class="fa fa-chevron-down")
+      div
+        a.fa.fa-chevron-down(href="#skills")
+      div
+        a.fa.fa-chevron-down.cheveron2(href="#skills")
+
+    .skills-down-arrow.hidden-xs
+      div
+        a.fa.fa-chevron-down(href="#human")
+      div
+        a.fa.fa-chevron-down.cheveron4(href="#human")
 
     #nav-header.container-fluid
       nav.navbar.navbar-fixed-top
@@ -57,7 +63,7 @@ html
           h1 Tech prowess
           h4.
             The vast majority of our class time was spent hacking. We worked in small teams on group projects
-            and also spent a lot of time doing solo projects.
+            and also spent plent of time doing solo projects.
 
       .row.code-shots
         .col-md-12
@@ -121,6 +127,7 @@ html
             p.highlight Master of beasts.
 
     .row.footer
+      a.back-to-top(href='#home') Back to top
       .col-xs-10
         .col-xs-1.col-xs-offset-6.main-link
           a(href='https://github.com/brayhoward'): i.fa.fa-github

@@ -57,7 +57,7 @@ html
 
       .right-side.col-sm-6
 
-    #skills.row.full-panel.full-panel.text-center
+    #skills.row.full-panel.text-center
       .row
         .col-sm-8.col-sm-offset-2
           h1 Tech prowess
@@ -65,22 +65,47 @@ html
             The vast majority of our class time was spent hacking. We worked in small teams on group projects
             and also spent plent of time doing solo projects.
 
-      .row.code-shots
-        .col-md-12
-          .col-md-4
-            //img.img-responsive.img-rounded.center-block(src="img/code-shots/cal_output.png")
-            //p.highlight.
-              Ruby implamentation Unix <a href="https://github.com/brayhoward/calendar_app">`Cal`</a>
-              without using Ruby's Time class.
-          .col-md-4.pic
-            img.img-responsive.img-rounded.center-block(src="img/code-shots/linked_list_code_shot.png")
-            p.highlight.
-              <a href="https://github.com/brayhoward/linked_list_cohort_huckleberry">Linked list</a>
+      #project-carousel.carousel.slide(data-ride="carousel")
+        ol.class="carousel-indicators"
+          li(data-target="#project-carousel" data-slide-to="0" class="active")
+          li(data-target="#project-carousel" data-slide-to="1")
+          li(data-target="#project-carousel" data-slide-to="2")
+
+        .carousel-inner(role="listbox")
+          .item.active
+            img(src="img/code-shots/linked_list_code_shot.png")
+            .carousel-caption
+              p.highlight.
+                <a href="https://github.com/brayhoward/linked_list_cohort_huckleberry">Linked list</a>
               data structure constructed with base Ruby, not leverageing arrays or hashes.
-          .col-md-4
-            //img.img-responsive.img-rounded.center-block(src="img/code-shots/game-won-2.png")
-            //p.highlight.
-              <a href="https://game-won.firebaseapp.com/?">Game-won</a>, tic-tac-toe built with javaScript.
+          .item
+            img(src="img/code-shots/game-won-2.png")
+            .carousel-caption
+              p Game-won
+
+        a.left.carousel-control(href="project-carousel" role="button" data-slide="prev")
+          span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+          span.sr-only Previous
+        a.right.carousel-control(href="project-carousel" role="button" data-slide="prev")
+          span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+          span.sr-only Next
+
+      //- .row.code-shots
+      //-   .col-md-12
+      //-     .col-md-4
+      //-       //img.img-responsive.img-rounded.center-block(src="img/code-shots/cal_output.png")
+      //-       //p.highlight.
+      //-         Ruby implamentation Unix <a href="https://github.com/brayhoward/calendar_app">`Cal`</a>
+      //-         without using Ruby's Time class.
+      //-     .col-md-4.pic
+      //-       img.img-responsive.img-rounded.center-block(src="img/code-shots/linked_list_code_shot.png")
+      //-       p.highlight.
+      //-         <a href="https://github.com/brayhoward/linked_list_cohort_huckleberry">Linked list</a>
+      //-         data structure constructed with base Ruby, not leverageing arrays or hashes.
+      //-     .col-md-4
+      //-       //img.img-responsive.img-rounded.center-block(src="img/code-shots/game-won-2.png")
+      //-       //p.highlight.
+      //-         <a href="https://game-won.firebaseapp.com/?">Game-won</a>, tic-tac-toe built with javaScript.
 
 
       .row.logos.hidden-xs

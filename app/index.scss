@@ -184,7 +184,7 @@ html, body {height: 100%}
   }
 }
 
-#skills {
+.skills {
   background-color: $white;
   color: $black;
   .code-shots img {
@@ -210,8 +210,22 @@ html, body {height: 100%}
       min-width: 31px;
     }
   }
-
 }
+/////////////// Carousel
+#myCarousel {
+  background-color: grey;
+  height: 400px;
+  img {width: auto; height: 250px; margin: 73px auto 0;}
+}
+
+// .tales {
+//   width: 100%;
+// }
+// .carousel-inner{
+//   width:100%;
+//   max-height: 200px !important;
+// }
+
 
 #human {
   p, h3 {

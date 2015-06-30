@@ -43,6 +43,7 @@ html
     #home.row.full-panel
       .left-side.col-sm-6
         img.profile-mobile.img-circle.center-block.visible-xs(src="img/brandon-profile-grey.jpg")
+        //h1 Brandon Howard,
         h1 Software craftsman & Rubyist in training.
         i(class="fa fa-quote-left fa-3x pull-left fa-border")
         p.
@@ -67,24 +68,25 @@ html
       ol.carousel-indicators
         li(data-target="#myCarousel", data-slide-to="0", class="active")
         li(data-target="#myCarousel", data-slide-to="1")
+        //li(data-target="#myCarousel" data-slide-to="2")
+
       .carousel-inner(role="listbox")
         .item.active
           img.img-responsive.img-rounded.center-block(src="img/code-shots/linked_list_code_shot.png")
           .container
-            .carousel-caption
+            div.text-center
               h3.highlight.
-              <a href="https://github.com/brayhoward/linked_list_cohort_huckleberry">Linked list</a>
-              data structure constructed with base Ruby, not leverageing arrays or hashes.
+                <a href="https://github.com/brayhoward/linked_list_cohort_huckleberry">Linked list</a>
+                data structure constructed with base Ruby, not leverageing arrays or hashes.
         .item
-          img(src="img/code-shots/game-won-2.png")
+          img.img-responsive.img-rounded.center-block(src="img/code-shots/game-won-2.png")
           .carousel-caption
             p Game-won
 
       a.left.carousel-control(href="#myCarousel" role="button" data-slide="prev")
-        span.glyphicon.glyphicon-chevron-left
+        span.fa.fa-chevron-left
       a.right.carousel-control(href="#myCarousel" role="button" data-slide="next")
-        span.glyphicon.glyphicon-chevron-right
-
+        span.fa.fa-chevron-right
 
       //- .row.code-shots
       //-   .col-md-12

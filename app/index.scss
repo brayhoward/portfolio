@@ -213,18 +213,39 @@ html, body {height: 100%}
 }
 /////////////// Carousel
 #myCarousel {
-  background-color: grey;
+  background-color: white;
   height: 400px;
-  img {width: auto; height: 250px; margin: 73px auto 0;}
-}
+  box-shadow:0 8px 6px -6px black;
+  border-top: 1px solid lightgrey;
+  img {
+    width: auto;
+    height: 250px;
+    margin: 73px auto 0;
+  }
 
-// .tales {
-//   width: 100%;
-// }
-// .carousel-inner{
-//   width:100%;
-//   max-height: 200px !important;
-// }
+  .carousel-indicators {
+    bottom: 5px;
+    li {
+      background-color: black;
+    }
+    .active {
+      background-color: $purple2;
+    }
+  }
+
+  a {
+    color: $purple2;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .fa {
+    margin: 20rem 0 0 0;
+  }
+  .carousel-control:focus {
+    background-color: transparent;
+  }
+}
 
 
 #human {

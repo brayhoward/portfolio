@@ -49,16 +49,18 @@ a:focus {
 }
 
 
-
 @media (max-width: 768px) {
   h1 {font-size: 28px;}
   h2 {font-size: 20px;}
+  .full-panel {padding: 25px 20px 20px 20px;}
 }
 
 @media (max-width: 400px) {
   h1 {font-size: 22px;}
   h2 {font-size: 18px;}
+  .full-panel {padding: 20px;}
 }
+
 
 nav {
   background-color: $black;
@@ -99,12 +101,6 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
-@media (max-width: 768px) {
-  .full-panel {padding: 25px 20px 20px 20px;}
-}
-@media (max-width: 400px) {
-  .full-panel {padding: 20px;}
 }
 
 html, body {height: 100%}
@@ -260,6 +256,7 @@ html, body {height: 100%}
     img {
       margin-bottom: 15px;
       border: 1px solid $black;
+      min-width: 80px;
     }
     .pic {
       margin:25px 40px 50px 25px;

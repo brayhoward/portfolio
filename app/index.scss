@@ -143,21 +143,20 @@ html, body {height: 100%}
 
 .down-arrow {
   position: absolute;
-  left: 50px; top: 80%;
+  left: 50px; top: 90%;
   font-size: 30px;
   color: $black;
 
-  ul {list-style-type: none;}
-
-  i {
-    font-size: 35px;
+  a > i {
+    font-size: 52px;
     color: $black;
+    font-weight: bold;
   }
-  i:hover {
+  a > i:hover {
     color: $bright;
   }
 
-  i:focus {
+  a > i:focus {
   background-color: none;
   color: $bright;
   text-decoration: none;
@@ -348,8 +347,9 @@ html, body {height: 100%}
   .fa {
     margin: 10px;
   }
-  .back-to-top {
-    text-decoration: underline;
+  .arrow-up {
+    font-size: 29px;
+    margin: 5px auto 2px;
   }
 }
 

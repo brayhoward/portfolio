@@ -6072,7 +6072,12 @@ h3 {
   font-family: "PT Serif", serif; }
 
 p {
-  font-family: "PT Serif", serif; }
+  font-family: "PT Serif", serif;
+  font-size: 18px; }
+
+@media (max-width: 600px) {
+  p {
+    font-size: 14px; } }
 
 body {
   padding-top: 40px;
@@ -6083,10 +6088,11 @@ a {
 
 a:hover {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  background-color: none; }
 
 a:focus {
-  background-color: #000;
+  background-color: none;
   color: #fff;
   text-decoration: none; }
 
@@ -6129,19 +6135,22 @@ nav {
   color: #DFFF02; }
 
 .profile-mobile {
-  width: 40%;
-  padding: 20px; }
+  width: 40%; }
 
 .white-text {
   color: #fff; }
 
 .full-panel {
-  padding: 50px 25px 50px 50px; }
+  padding: 50px; }
 
 .full-panel-bg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
+
+@media (max-width: 600px) {
+  .full-panel {
+    padding: 30px; } }
 
 html, body {
   height: 100%; }
@@ -6170,20 +6179,21 @@ html, body {
 .down-arrow {
   position: absolute;
   left: 50px;
-  top: 80%;
+  top: 90%;
   font-size: 30px;
   color: #000; }
-  .down-arrow ul {
-    list-style-type: none; }
-  .down-arrow i {
-    font-size: 35px;
-    color: #000; }
-  .down-arrow i:hover {
-    color: #000; }
-  .down-arrow i:focus {
-    background-color: transparent;
+  .down-arrow a > i {
+    font-size: 52px;
     color: #000;
+    font-weight: bold; }
+  .down-arrow a > i:hover {
+    color: #DFFF02; }
+  .down-arrow a > i:focus {
+    background-color: none;
+    color: #DFFF02;
     text-decoration: none; }
+  .down-arrow a:focus {
+    background-color: #97AD00; }
   .down-arrow li.cheveron2 {
     margin-top: -25px; }
 
@@ -6231,7 +6241,7 @@ html, body {
   .skills h1 {
     color: #000; }
   .skills a {
-    color: #9124DA; }
+    color: #728300; }
   .skills a:hover {
     color: #9800FF; }
   .skills p.highlight {
@@ -6239,19 +6249,16 @@ html, body {
     color: #333;
     font-size: 12px; }
   .skills .logos {
-    margin: 50px 0; }
+    margin: 100px 0 50px; }
     .skills .logos img {
       min-width: 31px; }
 
 #myCarousel {
-  background-color: white;
-  height: 400px;
-  box-shadow: 0 8px 6px -6px black;
-  border-top: 1px solid lightgrey; }
-  #myCarousel img {
-    width: auto;
-    height: 250px;
-    margin: 73px auto 0; }
+  width: 70%;
+  margin-top: 50px;
+  height: 32rem; }
+  #myCarousel .carousel-inner {
+    width: 50%; }
   #myCarousel .carousel-indicators {
     bottom: 5px; }
     #myCarousel .carousel-indicators li {
@@ -6259,13 +6266,36 @@ html, body {
     #myCarousel .carousel-indicators .active {
       background-color: #9800FF; }
   #myCarousel a {
-    color: #9800FF; }
+    color: #728300; }
   #myCarousel a:hover {
     text-decoration: underline; }
   #myCarousel .fa {
-    margin: 20rem 0 0 0; }
+    margin: 10rem 0 0 0;
+    font-size: 40px;
+    color: black; }
+  #myCarousel .fa.fa-chevron-right {
+    margin-left: 20px; }
+  #myCarousel .fa.fa-chevron-left {
+    margin-right: 20px; }
   #myCarousel .carousel-control:focus {
     background-color: transparent; }
+  #myCarousel .carousel-control.left,
+  #myCarousel .carousel-control.right {
+    background-image: none; }
+
+@media (max-width: 600px) {
+  #myCarousel {
+    width: 80%;
+    margin-top: 25px; }
+    #myCarousel .carousel-inner {
+      width: 80%; } }
+
+.project-list .item img {
+  width: 70%;
+  margin: 20px auto; }
+
+.project-list .item h4 {
+  margin-bottom: 100px; }
 
 #human p, #human h3 {
   color: #fff;
@@ -6275,27 +6305,25 @@ html, body {
 #human h2, #human h1 {
   color: #000; }
 
-#human .pics {
-  margin: 25px 0 25px 25px; }
-  #human .pics img {
-    margin-bottom: 15px;
-    border: 1px solid #000;
-    min-width: 80px; }
-  #human .pics .pic {
-    margin: 25px 40px 50px 25px; }
-  #human .pics p {
-    color: #FFEA0D; }
+#human .pics img {
+  margin-bottom: 15px;
+  border: 1px solid #000;
+  min-width: 80px; }
+
+#human .pics .pic {
+  padding: 30px; }
+
+#human .pics p {
+  color: #FFEA0D; }
 
 @media (max-width: 768px) {
   #human .pics .pic {
-    margin-bottom: 25px; }
-    #human .pics .pic img {
-      width: 50%; } }
+    margin-bottom: 15px;
+    padding: 10px 50px; } }
 
 .footer {
   font-size: 15px;
-  background-color: #97AD00;
-  height: 48px; }
+  background-color: #97AD00; }
   .footer a {
     color: black; }
   .footer a:hover {
@@ -6303,10 +6331,14 @@ html, body {
   .footer a:focus {
     color: #DFFF02;
     background-color: #97AD00; }
+  .footer span {
+    font-size: 14px;
+    margin: 10px; }
   .footer .fa {
-    margin-top: 14px; }
-  .footer .back-to-top {
-    text-decoration: underline; }
+    margin: 10px; }
+  .footer .arrow-up {
+    font-size: 29px;
+    margin: 5px auto 2px; }
 
 .main-link {
   font-size: 20px; }

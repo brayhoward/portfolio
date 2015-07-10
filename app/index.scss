@@ -27,6 +27,12 @@ h3 {
 
 p {
   font-family: $pt-serif;
+  font-size: 18px;
+}
+@media (max-width: 600px) {
+  p {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -40,10 +46,11 @@ a {
 a:hover {
   color:$white;
   text-decoration: none;
+  background-color: none;
 }
 
 a:focus {
-  background-color: $black;
+  background-color: none;
   color: $white;
   text-decoration: none;
 }
@@ -91,17 +98,20 @@ nav {
 
 .profile-mobile {
   width: 40%;
-  padding:20px;
 }
 
 .white-text {
   color: $white;
 }
-.full-panel {padding: 50px 25px 50px 50px;}
+.full-panel {padding: 50px;}
 .full-panel-bg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+@media (max-width: 600px) {
+  .full-panel {padding: 30px;}
 }
 
 html, body {height: 100%}
@@ -133,25 +143,26 @@ html, body {height: 100%}
 
 .down-arrow {
   position: absolute;
-  left: 50px; top: 80%;
+  left: 50px; top: 90%;
   font-size: 30px;
   color: $black;
 
-  ul {list-style-type: none;}
-
-  i {
-    font-size: 35px;
+  a > i {
+    font-size: 52px;
     color: $black;
+    font-weight: bold;
   }
-  i:hover {
-    color: $black;
+  a > i:hover {
+    color: $bright;
   }
 
-  i:focus {
-  background-color: transparent;
-  color: $black;
+  a > i:focus {
+  background-color: none;
+  color: $bright;
   text-decoration: none;
   }
+
+  a:focus {background-color: $middle;}
 
   li.cheveron2 {
       margin-top: -25px;
@@ -218,7 +229,7 @@ html, body {height: 100%}
   }
   h1 {color: $black}
   a {
-    color: $purple;
+    color: #728300;
   }
 
   a:hover {
@@ -230,7 +241,7 @@ html, body {height: 100%}
     font-size: 12px;
   }
   .logos {
-    margin: 50px 0;
+    margin: 100px 0 50px;
     img {
       min-width: 31px;
     }
@@ -238,16 +249,10 @@ html, body {height: 100%}
 }
 /////////////// Carousel
 #myCarousel {
-  background-color: white;
-  height: 400px;
-  box-shadow:0 8px 6px -6px black;
-  border-top: 1px solid lightgrey;
-  img {
-    width: auto;
-    height: 250px;
-    margin: 73px auto 0;
-  }
-
+  width: 70%;
+  margin-top: 50px;
+  height: 32rem;
+  .carousel-inner {width: 50%}
   .carousel-indicators {
     bottom: 5px;
     li {
@@ -259,19 +264,43 @@ html, body {height: 100%}
   }
 
   a {
-    color: $purple2;
+    color: #728300;
   }
   a:hover {
     text-decoration: underline;
   }
   .fa {
-    margin: 20rem 0 0 0;
+    margin: 10rem 0 0 0;
+    font-size: 40px;
+    color: black;
   }
+  .fa.fa-chevron-right {margin-left: 20px}
+  .fa.fa-chevron-left {margin-right: 20px}
   .carousel-control:focus {
     background-color: transparent;
   }
+  .carousel-control.left,
+  .carousel-control.right{
+    background-image: none;
+  }
 }
 
+@media (max-width: 600px) {
+  #myCarousel {
+    width: 80%;
+    margin-top: 25px;
+    .carousel-inner {width: 80%}
+  }
+}
+.project-list {
+  .item {
+    img {
+      width: 70%;
+      margin: 20px auto;
+    }
+    h4 {margin-bottom: 100px;}
+  }
+}
 
 #human {
   p, h3 {
@@ -281,14 +310,13 @@ html, body {height: 100%}
   }
   h2, h1 {color: $black}
   .pics {
-    margin: 25px 0 25px 25px;
     img {
       margin-bottom: 15px;
       border: 1px solid $black;
       min-width: 80px;
     }
     .pic {
-      margin:25px 40px 50px 25px;
+      padding: 30px;
     }
     p {color: #FFEA0D}
   }
@@ -296,15 +324,14 @@ html, body {height: 100%}
 
 @media (max-width: 768px) {
   #human .pics .pic {
-    margin-bottom: 25px;
-    img {width: 50%;}
+    margin-bottom: 15px;
+    padding: 10px 50px;
   }
 }
 
 .footer {
   font-size: 15px;
   background-color: $middle;
-  height:48px;
   a {color: black;}
   a:hover {
     color: $bright;
@@ -313,11 +340,16 @@ html, body {height: 100%}
     color: $bright;
     background-color: $middle;
   }
-  .fa {
-    margin-top: 14px;
+  span {
+    font-size: 14px;
+    margin:10px;
   }
-  .back-to-top {
-    text-decoration: underline;
+  .fa {
+    margin: 10px;
+  }
+  .arrow-up {
+    font-size: 29px;
+    margin: 5px auto 2px;
   }
 }
 

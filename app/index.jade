@@ -4,17 +4,15 @@ html
     meta(name='viewport' content='width=device-width, initial-scale=1')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    link(rel="shorcut icon" type="image/ico" href="/img/favicon.ico")
     link(rel='stylesheet' href='vendor/font-awesome/css/font-awesome.min.css')
     link(href='//http:fonts.googleapis.com/css?family=Lato:100|PT+Serif' rel='stylesheet' type='text/css')
     link(rel='stylesheet' href='index.css' type='text/css')
     title Brandon Howard
   body
     .down-arrow.bounce.hidden-xs
-      ul
-        li
-          i.fa.fa-chevron-down
-        li.cheveron2
-          i.fa.fa-chevron-down
+      a(href='#skills')
+        i.fa.fa-angle-double-down
     #nav-header.container-fluid
       nav.navbar.navbar-fixed-top
         .container-fluid.navbar-left
@@ -40,30 +38,24 @@ html
         i(class="fa fa-quote-left fa-3x pull-left fa-border")
         p.
             Thanks for dropping by! I've recently graduated from<a href="http://nashvillesoftwareschool.com/">
-            Nashville Software School,</a> an intensive, six-month, thirty-five-hour-a-week coding bootcamp,
-            where we spent three months learning front-end development and another three learning the back-end.
+            Nashville Software School</a>, a six-month, thirty-five-hour-a-week coding bootcamp.
+            The program consisted of three months of front-end development training and then three months of server-side training.
             While I was there, I learned all about the magic that is software development. I also
-            learned a lot about myself. In the fourth month, I was introduced to Ruby and quickly
-            fell in love. I'm now seeking a thoughtful, passionate team to help me hone my new craft.
+            learned a lot about myself. I am now seeking a thoughtful, passionate team to help me hone my new craft.
 
       .right-side.col-sm-6
 
     #skills.skills.row.full-panel.text-center
       .row
-        .col-sm-8.col-sm-offset-2
+        .col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
           h1 Tech prowess
-          h4.
-            The vast majority of our class time was spent hacking. We worked in small teams on group projects
-            and also spent plenty of time doing solo projects.
+          p.
+            The vast majority of class time was spent hacking. I worked in small teams on group projects,
+            and I also spent plenty of time doing solo projects as well.
 
-      #myCarousel.carousel.slide(data-ride="carousel")
-        ol.carousel-indicators
-          li(data-target="#myCarousel", data-slide-to="0", class="active")
-          li(data-target="#myCarousel", data-slide-to="1")
-          li(data-target="#myCarousel" data-slide-to="2")
-          li(data-target="#myCarousel" data-slide-to="3")
+      #myCarousel.carousel.center-block.hidden-xs.slide(data-ride="carousel")
 
-        .carousel-inner(role="listbox")
+        .carousel-inner.center-block(role="listbox")
           .item.active
             img.img-responsive.img-rounded.center-block(src="img/code-shots/bounty.png")
             div.text-center
@@ -79,7 +71,7 @@ html
                 data structure constructed with base Ruby.
 
           .item
-            img.img-responsive.img-rounded.center-block(src="img/code-shots/cal.png")
+            img.img-responsive.img-rounded.center-block(src="img/code-shots/calrb.png")
             div.text-center
               h4.highlight.
                 Ruby implamentation of the Unix <a href="https://github.com/brayhoward/calendar_app">`Cal`</a> program
@@ -95,9 +87,35 @@ html
         a.right.carousel-control(href="#myCarousel" role="button" data-slide="next")
           span.fa.fa-chevron-right
 
+      .project-list.hidden-sm.hidden-md.hidden-lg
+        .item
+          img.img-responsive.img-rounded.center-block(src="img/code-shots/bounty.png")
+          div.text-center
+            h4.highlight.
+              <a href="https://github.com/brayhoward/swap">Bounty</a>,
+              a social networking application built with Rails.
+
+        .item
+          img.img-responsive.img-rounded.center-block(src="img/code-shots/linked-list.png")
+          div.text-center
+            h4.highlight.
+              <a href="https://github.com/brayhoward/linked_list_cohort_huckleberry">Linked list</a>
+              data structure constructed with base Ruby.
+
+        .item
+          img.img-responsive.img-rounded.center-block(src="img/code-shots/cal.png")
+          div.text-center
+            h4.highlight.
+              Ruby implamentation of the Unix <a href="https://github.com/brayhoward/calendar_app">`Cal`</a> program
+        .item
+          img.img-responsive.img-rounded.center-block(src="img/code-shots/game-won-2.png")
+          div.text-center
+            h4.highlight.
+              <a href="https://game-won.firebaseapp.com/?">Game-won</a>, tic-tac-toe built with javaScript.
+
       .row.logos.hidden-xs
         .col-sm-8.col-sm-offset-2
-          h4 Doing one, sometimes, two new projects a week allowed us to familiarize ourselves with a lot of awesome technologies!
+          p Doing one, sometimes, two new projects a week allowed me to familiarize myself with a lot of awesome technologies!
           .col-sm-1.col-sm-offset-1
             img.img-responsive.img-rounded.center-block(src="img/logos/gulp_logo_words.png")
           .col-sm-1
@@ -124,29 +142,31 @@ html
       .row
         .col-sm-8.col-sm-offset-2
           h1 My human side...
-          h3 When not putting code to paper, I enjoying getting out into the wilderness, climbing big rocks, kayaking, and spending time with loved ones.
+          p When not putting code to paper, I enjoying getting out into the wilderness, climbing big rocks, kayaking, and spending time with loved ones.
 
       .row.pics
-        .col-md-10.col-md-offset-1
-          .col-md-3.pic
-            img.img-responsive.img-circle.center-block(src="img/human2.jpg")
-            p.highlight Friend to the tiny humans.
-          .col-md-3.pic
-            img.img-responsive.img-circle.center-block(src="img/human1.jpg")
-            p.highlight Lover of adventure.
-          .col-md-3.pic
-            img.img-responsive.img-circle.center-block(src="img/sketch.jpg")
-            p.highlight Master of beasts.
+        .col-sm-4.pic
+          img.img-responsive.img-circle.center-block(src="img/human2.jpg")
+          p.highlight Friend to the tiny humans.
+        .col-sm-4.pic
+          img.img-responsive.img-circle.center-block(src="img/human1.jpg")
+          p.highlight Lover of adventure.
+        .col-sm-4.pic
+          img.img-responsive.img-circle.center-block(src="img/human-and-squirrel.jpg")
+          p.highlight Master of beasts.
 
     .row.footer
-      a.back-to-top(href='#home') Back to top
-      .col-xs-10
-        .col-xs-1.col-xs-offset-6.main-link
-          a(href='https://github.com/brayhoward'): i.fa.fa-github
-        .col-xs-1.main-link
-          a(href='https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button'): i.fa.fa-linkedin
-        .col-xs-1
-          a(href='https://twitter.com/brandonrhoward1'): i.fa.fa-twitter
+      .col-sm-4.col-sm-offset-4.text-center
+        a(href='mailto:brandonrhoward@gmail.com')
+          span Get in Touch:
+          i.fa.fa-envelope
+        a(href='https://github.com/brayhoward'): i.fa.fa-github
+        a(href='https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button'): i.fa.fa-linkedin
+        a(href='https://twitter.com/brandonrhoward1'): i.fa.fa-twitter
+      .col-sm-4
+        .col-sm-1.col-sm-offset-8.text-center
+          a(href='#home')
+            i.fa.fa-arrow-circle-o-up.arrow-up
     script(src='vendor/jquery/dist/jquery.js')
     script(src='vendor/bootstrap-sass/assets/javascripts/bootstrap.js')
     script(src='index.js')

@@ -56,9 +56,10 @@ gulp.task('watch', ['connect'], function() {
   });
 });
 
+
 //////////DEFAULT////////////////////////////////////
 gulp.task('build', ['copy', 'jade', 'css']);
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', ['watch']);
 
 gulp.task('refresh', ['build'], function() {
   gulp.src(__dirname).pipe(connect.reload());

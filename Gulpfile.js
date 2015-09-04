@@ -32,7 +32,7 @@ gulp.task('css', function() {
 //////////clean///////////////////////////////////
 
 gulp.task('clean', function () {
-  del(['public/**/*', '!public', '!public/vendor/**/*', '!public/vendor']);
+  del(['public/img/**/*', '!public/img', '!public/vendor/**/*', '!public/vendor']);
 });
 
 

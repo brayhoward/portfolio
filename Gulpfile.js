@@ -3,7 +3,7 @@ var gulp         = require('gulp'),
     connect      = require('gulp-connect'),
     jade         = require('gulp-jade'),
     copy         = require('gulp-copy'),
-    sass         = require('gulp-ruby-sass'),
+    sass         = require('gulp-sass'),
     watch        = require('gulp-watch'),
     rename       = require('gulp-rename'),
     minifycss    = require('gulp-minify-css')
@@ -14,27 +14,25 @@ var gulp         = require('gulp'),
 gulp.task('connect', function(){
   connect.server({
     root: [__dirname],
-    port: 8000,
+    port: 7000,
     livereload: true
   });
 });
 //////////SASS////////////////////////////////////
-
-gulp.task('css', function() {
-  return sass('./app/index.scss', { style: 'expanded' })
-    .pipe(autoprefixer('last 2 version'))
+gulp.task('sass', function() {
+  return gulp.src('./app/index.scss')
+    .pipe(sass())
+    .pipe(autoprefixer('last 2 versions'))
     .pipe(gulp.dest('./public'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('./public'));
 });
 
 //////////clean///////////////////////////////////
-
 gulp.task('clean', function () {
   del(['public/img/**/*', '!public/img', '!public/vendor/**/*', '!public/vendor']);
 });
-
 
 //////////COPY////////////////////////////////////
 gulp.task('copy', ['clean'], function () {
@@ -58,7 +56,7 @@ gulp.task('watch', ['connect'], function() {
 
 
 //////////DEFAULT////////////////////////////////////
-gulp.task('build', ['copy', 'jade', 'css']);
+gulp.task('build', ['copy', 'jade', 'sass']);
 gulp.task('default', ['watch']);
 
 gulp.task('refresh', ['build'], function() {

@@ -32,7 +32,7 @@ gulp.task('jade', function() {
   gulp.src('./app/**/*.jade')
     .pipe(jade({pretty: true, doctype: 'html'}))
     .on('error', console.error.bind(console))
-    .pipe(gulp.dest('./public/'))
+    .pipe(gulp.dest('./'))
     .pipe( connect.reload() );
 });
 //////////WATCH////////////////////////////////////

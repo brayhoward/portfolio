@@ -4,10 +4,10 @@ html
     meta(name='viewport' content='width=device-width, initial-scale=1')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    link(rel="shorcut icon" type="image/ico" href="/img/favicon.ico")
-    link(rel='stylesheet' href='vendor/font-awesome/css/font-awesome.min.css')
+    link(rel="shorcut icon" type="image/ico" href="public/img/favicon.ico")
+    link(rel='stylesheet' href='public/vendor/font-awesome/css/font-awesome.min.css')
     link(href='//http:fonts.googleapis.com/css?family=Lato:100|PT+Serif' rel='stylesheet' type='text/css')
-    link(rel='stylesheet' href='index.css' type='text/css')
+    link(rel='stylesheet' href='public/index.min.css' type='text/css')
     title Brandon Howard
   body
     .down-arrow.bounce.hidden-xs
@@ -27,17 +27,18 @@ html
 
         #navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
+            li#link2: a(href='mailto:brandonrhoward@gmail.com'): i.fa.fa-envelope
             li#link2: a(href='https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button'): i.fa.fa-linkedin
             li#link2: a(href='https://github.com/brayhoward'): i.fa.fa-github
             li#link2: a(href='https://twitter.com/brandonrhoward1'): i.fa.fa-twitter
 
     #home.row.full-panel
       .left-side.col-sm-6
-        img.profile-mobile.img-circle.center-block.visible-xs(src="img/brandon-profile-grey.jpg")
+        img.profile-mobile.img-circle.center-block.visible-xs(src="public/img/brandon-profile-grey.jpg")
         h1 Software craftsman & Rubyist
         i(class="fa fa-quote-left fa-3x pull-left fa-border")
         p.
-            Lover of all things tech, Especially software. I'm a creator and problem solver. I mostly build with rails right now. Working to automate the world one line of code at a time.
+            Lover of all things tech, Especially software. I'm a creator and problem solver. I mostly build with rails right now. I'm slowly working toward the automation of the world, one line of code at a time. Please feel free to reach out, my email is at the top and bottom of the page. You can also find me on the <a href="http://nashjs.org/blog/post/nashdev-slack">NashDev</a> Slack channel.
       .right-side.col-sm-6
 
     #skills.skills.row.full-panel.text-center
@@ -49,26 +50,26 @@ html
 
         .carousel-inner.center-block(role="listbox")
           .item.active
-            img.img-responsive.img-rounded.center-block(src="img/code-shots/bounty.png")
+            img.img-responsive.img-rounded.center-block(src="public/img/code-shots/bounty.png")
             div.text-center
               h4.highlight.
                 <a href="https://github.com/brayhoward/swap">Bounty</a>,
                 a social networking application built with Rails.
 
           .item
-            img.img-responsive.img-rounded.center-block(src="img/code-shots/linked-list.png")
+            img.img-responsive.img-rounded.center-block(src="public/img/code-shots/linked-list.png")
             div.text-center
               h4.highlight.
                 <a href="https://github.com/brayhoward/linked_list_cohort_huckleberry">Linked list</a>
                 data structure constructed with base Ruby.
 
           .item
-            img.img-responsive.img-rounded.center-block(src="img/code-shots/calrb.png")
+            img.img-responsive.img-rounded.center-block(src="public/img/code-shots/calrb.png")
             div.text-center
               h4.highlight.
                 Ruby implementation of the Unix <a href="https://github.com/brayhoward/calendar_app">`Cal`</a> program
           .item
-            img.img-responsive.img-rounded.center-block(src="img/code-shots/game-won-2.png")
+            img.img-responsive.img-rounded.center-block(src="public/img/code-shots/game-won-2.png")
             div.text-center
               h4.highlight.
                 <a href="https://game-won.firebaseapp.com/?">Game-won</a>, tic-tac-toe built with javaScript.
@@ -81,54 +82,54 @@ html
 
       .project-list.hidden-sm.hidden-md.hidden-lg
         .item
-          img.img-responsive.img-rounded.center-block(src="img/code-shots/bounty.png")
+          img.img-responsive.img-rounded.center-block(src="public/img/code-shots/bounty.png")
           div.text-center
             h4.highlight.
               <a href="https://github.com/brayhoward/swap">Bounty</a>,
               a social networking application built with Rails.
 
         .item
-          img.img-responsive.img-rounded.center-block(src="img/code-shots/linked-list.png")
+          img.img-responsive.img-rounded.center-block(src="public/img/code-shots/linked-list.png")
           div.text-center
             h4.highlight.
               <a href="https://github.com/brayhoward/linked_list_cohort_huckleberry">Linked list</a>
               data structure constructed with base Ruby.
 
         .item
-          img.img-responsive.img-rounded.center-block(src="img/code-shots/cal.png")
+          img.img-responsive.img-rounded.center-block(src="public/img/code-shots/calrb.png")
           div.text-center
             h4.highlight.
               Ruby implementation of the Unix <a href="https://github.com/brayhoward/calendar_app">`Cal`</a> program
         .item
-          img.img-responsive.img-rounded.center-block(src="img/code-shots/game-won-2.png")
+          img.img-responsive.img-rounded.center-block(src="public/img/code-shots/game-won-2.png")
           div.text-center
             h4.highlight.
               <a href="https://game-won.firebaseapp.com/?">Game-won</a>, tic-tac-toe built with javaScript.
 
       .row.logos.hidden-xs
         .col-sm-1.col-sm-offset-1
-          img.img-responsive.img-rounded.center-block(src="img/logos/gulp_logo_words.png")
+          img.img-responsive.img-rounded.center-block(src="public/img/logos/gulp_logo_words.png")
         .col-sm-1
-          img.img-responsive.img-rounded.center-block(src="img/logos/git_logo_words.jpg")
+          img.img-responsive.img-rounded.center-block(src="public/img/logos/git_logo_words.jpg")
         .col-sm-1
-          img.img-responsive.img-rounded.center-block(src="img/logos/jade_logo_words.png")
+          img.img-responsive.img-rounded.center-block(src="public/img/logos/jade_logo_words.png")
         .col-sm-1
-          img.img-responsive.img-rounded.center-block(src="img/logos/3d-ruby.png")
+          img.img-responsive.img-rounded.center-block(src="public/img/logos/3d-ruby.png")
         .col-sm-1
-          img.img-responsive.img-rounded.center-block(src="img/logos/javascript_logo.png")
+          img.img-responsive.img-rounded.center-block(src="public/img/logos/javascript_logo.png")
         .col-sm-1
-          img.img-responsive.img-rounded.center-block(src="img/logos/rails_logo_words.jpg")
+          img.img-responsive.img-rounded.center-block(src="public/img/logos/rails_logo_words.jpg")
         .col-sm-1
-          img.img-responsive.img-rounded.center-block(src="img/logos/rspec_logo_words.png")
+          img.img-responsive.img-rounded.center-block(src="public/img/logos/rspec_logo_words.png")
         .col-sm-1
-          img.img-responsive.img-rounded.center-block(src="img/logos/haml_logo_words.png")
+          img.img-responsive.img-rounded.center-block(src="public/img/logos/haml_logo_words.png")
         .col-sm-1
-          img.img-responsive.img-rounded.center-block(src="img/logos/sass_logo_words.jpg")
+          img.img-responsive.img-rounded.center-block(src="public/img/logos/sass_logo_words.jpg")
         .col-sm-1
-          img.img-responsive.img-rounded.center-block(src="img/bootsrap.jpeg")
+          img.img-responsive.img-rounded.center-block(src="public/img/bootsrap.jpeg")
 
 
-    #human.row.full-panel.text-center.full-panel-bg(style='background-image:url("img/human-bg.jpg")')
+    #human.row.full-panel.text-center.full-panel-bg
       .row
         .col-sm-8.col-sm-offset-2
           h1 My human side...
@@ -136,13 +137,13 @@ html
 
       .row.pics
         .col-sm-4.pic
-          img.img-responsive.img-circle.center-block(src="img/human2.jpg")
+          img.img-responsive.img-circle.center-block(src="public/img/human2.jpg")
           p.highlight Friend to the tiny humans.
         .col-sm-4.pic
-          img.img-responsive.img-circle.center-block(src="img/human1.jpg")
+          img.img-responsive.img-circle.center-block(src="public/img/human1.jpg")
           p.highlight Lover of adventure.
         .col-sm-4.pic
-          img.img-responsive.img-circle.center-block(src="img/human-and-squirrel.jpg")
+          img.img-responsive.img-circle.center-block(src="public/img/human-and-squirrel.jpg")
           p.highlight Master of beasts.
 
     .row.footer
@@ -157,8 +158,8 @@ html
         .col-sm-1.col-sm-offset-8.text-center
           a(href='#home')
             i.fa.fa-arrow-circle-o-up.arrow-up
-    script(src='vendor/jquery/dist/jquery.js')
-    script(src='vendor/bootstrap-sass/assets/javascripts/bootstrap.js')
-    script(src='index.js')
+    script(src='public/vendor/jquery/dist/jquery.js')
+    script(src='public/vendor/bootstrap-sass/assets/javascripts/bootstrap.js')
+    script(src='public/index.js')
 
 
